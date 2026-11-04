@@ -1,37 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Adventure Escape SA | Home</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+  <!-- HEADER AND NAVIGATION -->
   <header>
     <h1>ADVENTURE ESCAPE SA</h1>
 
     <nav>
       <a href="index.html">Home</a>
+
       <a href="about.html">About Us</a>
-      <a href="fees.html">Fees</a>
+
+      <div class="dropdown">
+        <button type="button" aria-haspopup="true">
+          Adventures ▼
+        </button>
+
+        <div class="dropdown-content">
+          <a href="fees.html">Adventure Fees</a>
+          <a href="ziplining.html">Ziplining</a>
+        </div>
+      </div>
+
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main>
 
+    <!-- HERO SECTION -->
     <section class="hero">
       <h2>Explore • Experience • Escape</h2>
 
       <p>
         Discover exciting outdoor adventures throughout the Western Cape.
+        Create unforgettable memories with Adventure Escape SA.
       </p>
 
-      <a class="button" href="fees.html">VIEW ADVENTURES</a>
+      <a class="button" href="fees.html">
+        VIEW ADVENTURES
+      </a>
     </section>
 
+    <!-- CUSTOMER GROUPS -->
     <section class="section">
       <h2>ADVENTURE FOR EVERYONE</h2>
 
@@ -40,34 +62,39 @@
         <div class="card">
           <h3>Families</h3>
           <p>
-            Enjoy safe and exciting outdoor experiences designed for the whole family.
+            Enjoy safe and exciting outdoor experiences designed
+            for the whole family.
           </p>
         </div>
 
         <div class="card">
           <h3>Tourists</h3>
           <p>
-            Explore the natural beauty of the Western Cape through unforgettable adventures.
+            Explore the natural beauty of the Western Cape
+            through unforgettable adventures.
           </p>
         </div>
 
         <div class="card">
           <h3>Schools</h3>
           <p>
-            Fun outdoor activities that encourage teamwork, learning and adventure.
+            Enjoy fun outdoor activities that encourage
+            teamwork, learning and adventure.
           </p>
         </div>
 
         <div class="card">
           <h3>Corporate Groups</h3>
           <p>
-            Team-building experiences designed to improve communication and teamwork.
+            Experience team-building activities designed
+            to improve communication and teamwork.
           </p>
         </div>
 
       </div>
     </section>
 
+    <!-- FEATURED ADVENTURE -->
     <section class="section">
       <h2>POPULAR ADVENTURE</h2>
 
@@ -75,10 +102,12 @@
         <h3>Ziplining Adventure</h3>
 
         <p>
-          Experience breathtaking views while ziplining through the forest.
+          Experience breathtaking views while ziplining
+          through the forest. Enjoy an exciting outdoor
+          adventure with unforgettable scenery.
         </p>
 
-        <p><strong>R750</strong></p>
+        <p class="price">R750</p>
 
         <a class="button" href="ziplining.html">
           VIEW ACTIVITY
@@ -86,10 +115,27 @@
       </div>
     </section>
 
+    <!-- CALL TO ACTION -->
+    <section class="section">
+      <h2>READY FOR YOUR NEXT ADVENTURE?</h2>
+
+      <p>
+        Start planning your outdoor experience today.
+        Contact us to find out more about our activities
+        and adventure packages.
+      </p>
+
+      <a class="button" href="contact.html">
+        CONTACT US
+      </a>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Adventure Escape SA</p>
+    <p>© 2026 Adventure Escape SA. All rights reserved.</p>
+    <p>Explore • Experience • Escape</p>
   </footer>
 
 </body>

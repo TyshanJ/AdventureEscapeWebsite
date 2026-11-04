@@ -1,94 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adventure Escape SA | Fees</title>
+
+  <title>Adventure Escape SA | Adventure Fees</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+  <!-- HEADER AND NAVIGATION -->
   <header>
     <h1>ADVENTURE ESCAPE SA</h1>
 
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="fees.html">Fees</a>
+
+      <div class="dropdown">
+        <button type="button" aria-haspopup="true">
+          Adventures ▼
+        </button>
+
+        <div class="dropdown-content">
+          <a href="fees.html">Adventure Fees</a>
+          <a href="ziplining.html">Ziplining</a>
+        </div>
+      </div>
+
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
 
+    <!-- INTRODUCTION -->
+    <section class="section">
+      <h2>OUR ADVENTURE FEES</h2>
+
+      <p>
+        At Adventure Escape SA, we offer exciting outdoor
+        activities and adventure packages for individuals,
+        families, schools and corporate groups.
+      </p>
+    </section>
+
+    <!-- PACKAGES TABLE -->
     <section class="section">
       <h2>ADVENTURE PACKAGES</h2>
 
-      <div class="cards">
+      <table>
+        <caption>Our available adventure packages and prices</caption>
 
-        <div class="card">
-          <h3>Ultimate Adventure Day</h3>
-          <p>R1500</p>
-        </div>
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
 
-        <div class="card">
-          <h3>Family Explorer Package</h3>
-          <p>R1500</p>
-        </div>
+        <tbody>
+          <tr>
+            <td>Ultimate Adventure Day</td>
+            <td>A full day of exciting outdoor activities.</td>
+            <td>R1,500</td>
+          </tr>
 
-        <div class="card">
-          <h3>Mountain Adventure Package</h3>
-          <p>R1500</p>
-        </div>
+          <tr>
+            <td>Family Explorer Package</td>
+            <td>Outdoor experiences designed for families.</td>
+            <td>R1,500</td>
+          </tr>
 
-        <div class="card">
-          <h3>Corporate Team Challenge</h3>
-          <p>R1500</p>
-        </div>
+          <tr>
+            <td>Mountain Adventure Package</td>
+            <td>Explore the outdoors and enjoy mountain activities.</td>
+            <td>R1,500</td>
+          </tr>
 
-      </div>
+          <tr>
+            <td>Corporate Team Challenge</td>
+            <td>Activities that encourage teamwork and communication.</td>
+            <td>R1,500</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
+    <!-- INDIVIDUAL ACTIVITIES TABLE -->
     <section class="section">
       <h2>INDIVIDUAL ACTIVITIES</h2>
 
-      <div class="cards">
+      <table>
+        <caption>Individual adventure activities and prices</caption>
 
-        <div class="card">
-          <h3>Ziplining Adventure</h3>
-          <p>R750</p>
-          <a class="button" href="ziplining.html">VIEW ACTIVITY</a>
-        </div>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
 
-        <div class="card">
-          <h3>Kayaking Experience</h3>
-          <p>R750</p>
-        </div>
+        <tbody>
+          <tr>
+            <td>Ziplining Adventure</td>
+            <td>Experience exciting forest ziplining.</td>
+            <td>R750</td>
+          </tr>
 
-        <div class="card">
-          <h3>Rock Climbing Session</h3>
-          <p>R750</p>
-        </div>
+          <tr>
+            <td>Kayaking Experience</td>
+            <td>Enjoy an outdoor water adventure.</td>
+            <td>R750</td>
+          </tr>
 
-      </div>
+          <tr>
+            <td>Rock Climbing Session</td>
+            <td>Challenge yourself with an exciting climbing experience.</td>
+            <td>R750</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
+    <!-- DISCOUNT TABLE -->
     <section class="section">
-      <h2>DISCOUNTS</h2>
+      <h2>BOOKING DISCOUNTS</h2>
 
-      <div class="featured">
-        <p>1 booking = No discount</p>
-        <p>2 bookings = 5% discount</p>
-        <p>3 bookings = 10% discount</p>
-        <p>4 or more bookings = 15% discount</p>
-      </div>
+      <p>
+        Customers who book multiple activities or packages
+        can enjoy discounts based on the number of bookings.
+      </p>
+
+      <table>
+        <caption>Discounts based on the number of bookings</caption>
+
+        <thead>
+          <tr>
+            <th>Number of Bookings</th>
+            <th>Discount</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1 Booking</td>
+            <td>0%</td>
+          </tr>
+
+          <tr>
+            <td>2 Bookings</td>
+            <td>5%</td>
+          </tr>
+
+          <tr>
+            <td>3 Bookings</td>
+            <td>10%</td>
+          </tr>
+
+          <tr>
+            <td>4 or More Bookings</td>
+            <td>15%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CONTACT BUTTON -->
+    <section class="section">
+      <h2>READY TO BOOK YOUR ADVENTURE?</h2>
+
+      <p>
+        Contact us today to enquire about our activities
+        and adventure packages.
+      </p>
+
+      <a class="button" href="contact.html">
+        MAKE AN ENQUIRY
+      </a>
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Adventure Escape SA</p>
+    <p>© 2026 Adventure Escape SA. All rights reserved.</p>
+    <p>Explore • Experience • Escape</p>
   </footer>
 
 </body>

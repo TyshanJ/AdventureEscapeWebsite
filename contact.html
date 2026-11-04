@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Adventure Escape SA | Contact</title>
+
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +19,18 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="fees.html">Fees</a>
+
+      <div class="dropdown">
+        <button type="button" aria-haspopup="true">
+          Adventures ▼
+        </button>
+
+        <div class="dropdown-content">
+          <a href="fees.html">Adventure Fees</a>
+          <a href="ziplining.html">Ziplining</a>
+        </div>
+      </div>
+
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -26,40 +41,70 @@
       <h2>CONTACT US</h2>
 
       <p>
-        Have a question or need help with a booking? Send us a message.
+        Have questions or want to plan your next adventure?
+        Get in touch with Adventure Escape SA.
       </p>
 
-      <form>
+      <form id="contactForm" novalidate>
 
-        <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter your full name">
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        >
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email">
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        >
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="Enter your phone number">
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        >
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="6" placeholder="Type your message"></textarea>
+        <label for="activity">Adventure Interested In:</label>
+        <select id="activity" name="activity" required>
+          <option value="">Select an adventure</option>
+          <option value="Ziplining">Ziplining</option>
+          <option value="Kayaking">Kayaking</option>
+          <option value="Rock Climbing">Rock Climbing</option>
+          <option value="Adventure Package">Adventure Package</option>
+          <option value="Other">Other</option>
+        </select>
 
-        <button type="submit">SEND MESSAGE</button>
+        <label for="message">Your Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your message here"
+          required
+        ></textarea>
+
+        <div id="formMessage" role="alert" aria-live="polite"></div>
+
+        <button type="submit">SUBMIT MESSAGE</button>
 
       </form>
-
-      <div class="featured">
-        <h3>ADVENTURE ESCAPE SA</h3>
-
-        <p>Western Cape, South Africa</p>
-        <p>Adventure enquiries and bookings welcome.</p>
-      </div>
-
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Adventure Escape SA</p>
+    <p>© 2026 Adventure Escape SA. All rights reserved.</p>
+    <p>Explore • Experience • Escape</p>
   </footer>
 
 </body>
